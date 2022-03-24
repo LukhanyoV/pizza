@@ -1,3 +1,7 @@
+body {
+    background-color: aqua;
+}
+
 .small img { 
     width: 4em; 
 }
@@ -8,4 +12,39 @@
 
 .large img { 
     width: 7em; 
+}
+
+.specials {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.medium, .large, .small {
+    width: 100%;
+    padding: 5px;
+}
+
+.medium {
+    background-color: yellow;
+}
+
+.large {
+    background-color: purple;
+    margin: auto;
+}
+
+.small {
+    background-color: orange;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: yellowgreen;
+}
+
+@media (max-width: 688px) {
+    .specials {
+        flex-direction: column;
+    }
 }
