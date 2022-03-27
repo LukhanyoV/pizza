@@ -10,55 +10,61 @@
   <div>
     <div class="header" >
       <h1>Perfect Pizza</h1>
-      <div class="cartTotal" style="margin-left: auto">
-        <strong>Grand total:</strong>
-        <span>R300.00</span>
-        <a href="#">Show cart</a>
+      <div class="total-cart">
+        <div></div>
+        <div class="cartTotal" style="margin-left: auto">
+          <strong>Grand total:</strong>
+          <span>R300.00</span>
+          <a id="open-cart" href="#">Show cart</a>
+        </div>
       </div>
-      <div class="cart">
-        <h4>Shopping cart</h4>
-        <table>
-          <tr>
-            <th>
-              Quantity
-            </th>
-            <th>
-              Type
-            </th>
-            <th>
-              Total
-            </th>
-          </tr>
-          <tr>
-            <td>1x</td>
-            <td>Small pizzas</td>
-            <td>80.00</td>
-            <td><button class="btn">remove</button></td>
-          </tr>
-          <tr>
-            <td>3x</td>
-            <td>Medium pizzas</td>
-            <td>210.00</td>
-            <td><button class="btn" >remove</button></td>
-          </tr>
-          <tr>
-            <td>2x</td>
-            <td>Large pizzas</td>
-            <td>210.00</td>
-            <td><button class="btn">remove</button></td>
-          </tr>
-          <tr>
-            <td colspan="2">
-              <strong>Total</strong>
-            </td>
-            <td>
-              <strong>300.00</strong>
-            </td>
-          </tr>
-        </table>
-        <div>
-          <button class="btn">Check out</button>
-          <button class="btn">Hide cart</button>
+      <div class="cart-container">
+        <div></div>
+        <div class="cart">
+          <h4>Shopping cart</h4>
+          <table>
+            <tr>
+              <th>
+                Quantity
+              </th>
+              <th>
+                Type
+              </th>
+              <th>
+                Total
+              </th>
+            </tr>
+            <tr>
+              <td>1x</td>
+              <td>Small pizzas</td>
+              <td>80.00</td>
+              <td><button class="btn">remove</button></td>
+            </tr>
+            <tr>
+              <td>3x</td>
+              <td>Medium pizzas</td>
+              <td>210.00</td>
+              <td><button class="btn" >remove</button></td>
+            </tr>
+            <tr>
+              <td>2x</td>
+              <td>Large pizzas</td>
+              <td>210.00</td>
+              <td><button class="btn">remove</button></td>
+            </tr>
+            <tr>
+              <td colspan="2">
+                <strong>Total</strong>
+              </td>
+              <td>
+                <strong>300.00</strong>
+              </td>
+            </tr>
+          </table>
+          <div>
+            <button class="btn">Check out</button>
+            <button id="hide-cart" class="btn">Hide cart</button>
+          </div>
         </div>
       </div>
     </div>
@@ -117,8 +123,8 @@
     <div class="footer">
       <div class="contact">
         <strong>Contact us at:</strong>
-        (021)-541-1000
-        <strong>twitter /fb /insta </strong> @perfectpizza
+        (021)-541-1000 <br>
+        <strong>twitter/fb/insta: </strong> @perfectpizza
       </div>
       <div class="address">
         Pizza Plaza
@@ -131,5 +137,6 @@
       </div>
     </div>
   </div>
+  <script src="./script.js"></script>
 </body>
 </html>
