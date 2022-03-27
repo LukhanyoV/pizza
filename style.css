@@ -2,16 +2,51 @@ body {
     background-color: aqua;
 }
 
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+.btn {
+    width: 100%;
+    height: 30px;
+    background-color: brown;
+    color: white;
+}
+
+.total-cart {
+    display: flex;
+}
+
+.total-cart:first-child {
+    flex-grow: 1;
+}
+
+.cart-container {
+    display: flex;
+}
+
+.cart-container:first-child {
+    flex-grow: 1;
+}
+
+.cart {
+    display: none;
+}
+
 .small img { 
     width: 4em; 
+    border-radius: 50%;
 }
 
 .medium img { 
     width: 5em; 
+    border-radius: 50%;
 }
 
 .large img { 
     width: 7em; 
+    border-radius: 50%;
 }
 
 .specials {
@@ -39,8 +74,13 @@ body {
 
 .footer {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    width: 100%;
     background-color: yellowgreen;
+}
+
+.footer:nth-child(1) {
+    flex-grow: 1;
 }
 
 @media (max-width: 688px) {
